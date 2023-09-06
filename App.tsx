@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
 const data = [
     { id: 1, title: "Задание 1" },
     { id: 2, title: "Задание 2" },
+    { id: 3, title: "Задание 3" },
 ]
 
 export default function App() {
@@ -33,7 +34,7 @@ export default function App() {
     const onRefresh = useCallback(() => {
         setLoading(prev => !prev);
     }, [setLoading]);
-    
+
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
